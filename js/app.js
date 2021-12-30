@@ -9,5 +9,3 @@ startGame.addEventListener('click', e => {
   game = new Game();
   game.startGame();
 })
-
-
