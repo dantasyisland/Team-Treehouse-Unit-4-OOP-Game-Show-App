@@ -16,9 +16,11 @@ class Phrase {
     phraseLetterArray.forEach(letter => {
       const li = document.createElement('li');
       if (letter === ' ') {
-        li.innerHTML = `<li class ="space">${letter}</li>`;
+        li.classList = "space"
+        li.textContent = `${letter}`;
       } else {
-        li.innerHTML = `<li class ="hide letter ${letter}">${letter}</li>`;
+        li.classList = `hide letter ${letter}`;
+        li.textContent = `${letter}`;
       }
       phraseUL.appendChild(li)
     });
@@ -28,25 +30,21 @@ class Phrase {
    * @param (string) letter - Letter to check
    */
   checkLetter(letter) {
-    if (this.phrase.includes(letter)) {
-      console.log('Hit');
-    } else {
-      console.log('Miss');
-    }
 
-  };
+    return this.phrase.includes(letter)
+  }
   /**
    * Displays passed letter on screen after a match is found
    * @param (string) letter - Letter to display
    */
   showMatchedLetter(letter) {
-    // query selector of letter class hide to show
-    //<li class="hide letter m">m</li>
-    // change to show
-    let letterToShow = document.querySelector('ul');
-    letterToShow.classList = 'show letter ${letter}';
-
-
+    if (this.phrase.includes(letter)) {
+      let phraseLetters = document.getElementById('phrase').firstElementChild.children;
+      for (let i = 0; i < phraseLetters.length; i++) {
+        if (phraseLetters[i].textContent === letter) {
+          phraseLetters[i].classList = `show letter ${letter}`;
+        }
+      }
+    } else {}
   };
-
-}
+};

@@ -1,33 +1,31 @@
 /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
-
-/* Variables */
-
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&family=Titillium+Web:wght@400;600&display=swap');
 :root {
-  --color-win: #78CF82;
+  --color-win: #0079d5;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
-  --color-neutral-light: #D2D2D2;
+  --color-neutral-light: #d3ffeeb1;
   --color-keys: #37474F;
-  --color-keys-light: #E5E5E5;
-  --font-size-large: 60px;
-  --font-size-medium: 20px;
-  --transition: all .2s ease-in-out;
+  --color-keys-light: #d5d5d5;
+  --font-size-large: 40px;
+  --font-size-medium: 30px;
+  --transition: all .8s ease-in-out;
 }
 
 /* main */
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
+font-family: 'Titillium Web', sans-serif;}
 
 body {
   justify-content: space-evenly;
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-image: linear-gradient(to right, rgba(255, 0, 174, 0.2) , rgba(0,0,255,.5))
 }
 
 li, ol, ul {
@@ -40,6 +38,8 @@ h2 {
   text-transform: uppercase;
   font-size: var(--font-size-large);
   margin: 0;
+  font-family: 'Shizuru';
+
 }
 
 h1 {
@@ -48,7 +48,9 @@ h1 {
 
 button {
   margin: 6px;
-  border: 1px solid transparent;
+  border: 3px solid black;
+  height: 90px;
+  width: 90px;
   padding: .5rem 1rem;
   color: var(--color-keys);
   font-size: var(--font-size-medium);
@@ -60,9 +62,14 @@ button {
   cursor: pointer;
 }
 
+
+
 #btn__reset {
 	width: 200px;
+  height: 100px;
 	margin: 0 auto;
+  text-align: center;
+  font-size: 24 px;
 }
 
 .main-container {
@@ -72,12 +79,15 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
+
 }
 
 .section {
   width: 100%;
   padding: 10px;
 }
+
+
 
 #phrase ul li{
   margin-top: 15px;
@@ -86,7 +96,9 @@ button {
 /* Title */
 
 .header {
-  color: #3a3f58;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,1);
+  font-size: 100px;
 }
 
 
@@ -94,32 +106,35 @@ button {
 
 .letter {
   font-size: var(--font-size-medium);
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
   padding: 20px 1px 0 1px;
-  margin-right: 2px;
+  margin-right: 4px;
   color: transparent;
   background: var(--color-neutral-light);
-  border-radius: 5px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  text-transform: capitalize;
 }
 
 .space {
-  width: 15px;
+  width: 20px;
 }
 
 
 
 .show {
-  color: #fff;
-  background-color: #4ac0d5;
-  font-size: 20px;
-  height: 65px;
-  width: 65px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.845);
+  font-size: var(--font-size-medium);
+  height: 80px;
+  width: 80px;
   padding: 20px 1px 0 1px;
-  margin-right: 2px;
-  border-radius: 5px;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  margin-right: 4px;
+  border-radius: 20px;
+  border: 1px solid black;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 
@@ -128,18 +143,20 @@ button {
 .keyrow {
   display: flex;
   justify-content: center;
+
 }
 
 .chosen {
-  background: #3a3f58;
+  background: rgba(0, 115, 255, 0.557);
   border-radius: 5px;
   font-size: var(--font-size-medium);
-  color: #FFFFFF;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
 }
 
 .wrong {
   background: #f7a964;
-  color: #FFFFFF;
+  color: black;
 }
 
 .btn__reset {
@@ -147,7 +164,6 @@ button {
   margin: 50px auto;
   background: #f7a964;
   border-radius: 5px;
-  font-size: 20px;
   cursor: pointer;
   border-bottom: solid 4px rgba(0, 0, 0, .3);
   border-right: solid 3px rgba(0, 0, 0, .3)
@@ -177,6 +193,7 @@ button {
 
 .title {
   color: #FFF;
+  font-size: 100px;
 }
 
 .start {
