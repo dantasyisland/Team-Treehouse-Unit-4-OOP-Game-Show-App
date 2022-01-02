@@ -6,7 +6,7 @@ class Phrase {
     this.phrase = phrase.toLowerCase();
   }
   /**
-   * Display phrase on game board
+   * Displays a phrase on game board by creating an indivdual list element for each letter in the phrase
    */
   addPhraseToDisplay() {
     const phraseUL = document.querySelector('#phrase').firstElementChild;
@@ -26,15 +26,15 @@ class Phrase {
     });
   };
   /**
-   * Checks if passed letter is in phrase
+   * Checks for a letter in the phrase by using the includes method. Will return true or false if letter is in the phrase
    * @param (string) letter - Letter to check
+   * @return {boolean}
    */
   checkLetter(letter) {
-
     return this.phrase.includes(letter)
   }
   /**
-   * Displays passed letter on screen after a match is found
+   * Displays passed letter on screen after a match is found. It will iterate through all li elements and change the class of the letter that matches to .show letter ${letter}
    * @param (string) letter - Letter to display
    */
   showMatchedLetter(letter) {

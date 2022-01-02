@@ -21,7 +21,6 @@
 /* Changed The Font to Titillium Web */
 * {
   box-sizing: border-box;
-
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -32,7 +31,6 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
-
   background-image: linear-gradient(to right, rgba(255, 0, 174, 0.2), rgba(0, 0, 255, .5))
 }
 
@@ -50,7 +48,6 @@ h2 {
   text-transform: uppercase;
   font-size: var(--font-size-large);
   margin: 0;
-
   font-family: 'Shizuru';
 }
 
@@ -61,9 +58,7 @@ h1 {
 /* Added a thick black border */
 button {
   margin: 6px;
-
   border: 3px solid black;
-
   padding: .5rem 1rem;
   color: var(--color-keys);
   font-size: var(--font-size-medium);
@@ -140,9 +135,9 @@ button {
   height: 80px;
   width: 80px;
   padding: 20px 1px 0 1px;
-  margin-right: 4px;
-  border-radius: 5px;
-  border: 1px solid black;
+  margin-right: 2px;
+  border-radius: 10px;
+  border: 2px solid black;
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
 }
@@ -156,12 +151,13 @@ button {
 
 }
 
-/* changed background color color and  */
+/* changed background */
 .chosen {
   background: rgba(0, 115, 255, 0.557);
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: white;
+
 
 }
 
