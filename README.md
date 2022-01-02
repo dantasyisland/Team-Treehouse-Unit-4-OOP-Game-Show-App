@@ -1,7 +1,8 @@
-Unit 4 OOP Game Show App
+# Unit 4 OOP Game Show App
 
+An interactive game hunting for letters to reveal a phrase on the board. User can input via mouse or keyboard.
 
-Style Changes
+### Style Changes
 
 * Changed the colors for the win screen
 * Changed the font from Montserrat to Titillium Web - new import statement at top of CSS file
