@@ -71,7 +71,7 @@ class Game {
     for (let i = 0; i < this.missed; i++) {
       heartNodeList[i].firstElementChild.setAttribute(
         "src",
-        "../images/lostHeart.png"
+        "/images/lostHeart.png"
       );
     }
   }
