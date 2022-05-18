@@ -1,4 +1,4 @@
-# Unit 4 OOP Game Show App
+# Team Treehouse Fullstack Techdegree Project 4 - OOP Game Show App
 
 An interactive game hunting for letters to reveal a phrase on the board. User can input via mouse or keyboard.
 
